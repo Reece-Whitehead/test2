@@ -1,0 +1,59 @@
+<h1>Introduction to JavaScript</h1>
+<p>Following are some of the functionalities JavaScript can offer.</p>
+
+<h2>JavaScript Modularities: Changing HTML Content</h2>
+
+<p>One of the many tools in the JavaScript toolkit is the <code>getElementById()</code> method.</p>
+<p>The snippet below demonstrates changing the content of an HTML element (identified by id="demo") to the phrase "Hello JavaScript":</p>
+
+<h3>Demonstration</h3>
+<code>
+ document.getElementById("demo").innerHTML = "Hello JavaScript";
+</code>
+
+<p>JavaScript allows both double and single quotes. Note the example:</p>
+
+<h3>Demonstration</h3>
+<code>
+ document.getElementById('demo').innerHTML = 'Hello JavaScript';
+</code>
+
+<h2>JavaScript Can Alter HTML Attribute Values</h2>
+
+<p>JavaScript can modify the value of the <code>src</code> (source) attribute of an <code>&lt;img&gt;</code> tag as shown below:</p>
+
+<h3>Script-Driven Light Bulb</h3>
+
+<code>
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+</code>
+
+<h2>JavaScript's Ability to Modify HTML Styles (CSS)</h2>
+
+<p>Changing the CSS of an HTML element is a variant of adjusting an HTML attribute. See the example:</p>
+
+<h3>Demonstration</h3>
+<code>
+ document.getElementById("demo").style.fontSize = "35px";
+</code>
+
+<h2>Hiding and Showing HTML Elements with JavaScript</h2>
+
+<p>Hiding elements can be achieved by manipulating the <code>display</code> style attribute:</p>
+
+<h3>Demonstration</h3>
+<code>
+ document.getElementById("demo").style.display = "none";
+</code>
+
+<p>Displaying hidden HTML elements is achieved through a similar process:</p>
+
+<h3>Demonstration</h3>
+<code>
+ document.getElementById("demo").style.display = "block";
+</code>
+
+<h3>Fascinating Facts</h3>
+<p>Though they share similar names, JavaScript and Java are entirely different in both their conceptual designs and language frameworks. JavaScript was created by Brendan Eich in 1995 and was standardized by the ECMA in 1997. ECMA-262 is the official name of this standard, while ECMAScript is the formal name given to the language.</p>
