@@ -1,0 +1,72 @@
+<h1>Locations for JavaScript <span class="header_color">Code</span></h1>
+<h2>Using the &lt;script&gt; Tag</h2>
+<p>JavaScript code should go between <code>&lt;script&gt;</code> and <code>&lt;/script&gt;</code> tags in an HTML page.</p>
+<h2>Example:</h2>
+<div class="code">
+<code>
+&lt;script&gt;<br>
+document.getElementById("example").innerHTML = "First JavaScript Line";<br>
+&lt;/script&gt;
+</code>
+</div>
+<p>Remember that some older JavaScript examples might use a type attribute: &lt;script type="text/javascript"&gt;. However, this attribute is not really necessary because JavaScript is the default scripting language in HTML.</p>
+<h2>JavaScript Functions and Triggers</h2>
+<p>A JavaScript <code>function</code> is a segment of code that is executed when it is "called" or "invoked".</p>
+<p>A function might be invoked during an <b>event</b>, such as when a user clicks a button.</p>
+<p>You'll learn more about functions and events in upcoming lessons.</p>
+<h2>Placing JavaScript in the &lt;head&gt; or &lt;body&gt; of Your HTML Page</h2>
+<p>You can insert any number of scripts into an HTML document. These scripts can be placed in the <code>&lt;body&gt;</code>, in the <code>&lt;head&gt;</code> section, or in both.</p>
+<h2>JavaScript in &lt;head&gt;</h2>
+<p>For example, a JavaScript function can be placed inside the <code>&lt;head&gt;</code> section. This function might be invoked when a button is clicked:</p>
+<h2>Example</h2>
+<div class="code">
+<code>
+&lt;head&gt;<br>
+&lt;script&gt;<br>
+function ourFunction() {<br>
+  document.getElementById("example").innerHTML = "Text Changed.";<br>
+}<br>
+&lt;/script&gt;<br>
+&lt;/head&gt;
+</code>
+</div>
+<h2>JavaScript in &lt;body&gt;</h2>
+<p>In another example, a JavaScript function can be placed within the <code>&lt;body&gt;</code> section and this might be triggered when a button is clicked:</p>
+<h2>Example</h2>
+<div class="code">
+<code>
+&lt;body&gt;<br>
+&lt;script&gt;<br>
+function ourFunction() {<br>
+  document.getElementById("example").innerHTML = "Text Changed Again.";<br>
+}<br>
+&lt;/script&gt;<br>
+&lt;/body&gt;
+</code>
+</div>
+<p>Putting scripts at the bottom of the &lt;body&gt; element can boost the display speed because script interpretation can decelerate the display.</p>
+<h2>Using External JavaScript Files</h2>
+<p>Scripts can also be put in separate, external files. An external JavaScript file may be very useful when the same code is used in various web pages. JavaScript files have the .js file extension.</p>
+<p>An external script can be used by placing the script file's name in the <code>src</code> (source) attribute of a <code>&lt;script&gt;</code> tag. This script tag can be located in the <code>&lt;head&gt;</code> or <code>&lt;body&gt;</code> as required. The script operates as if it is positioned exactly where the <code>&lt;script&gt;</code> tag is. Remember, external scripts cannot contain <code>&lt;script&gt;</code> tags.</p>
+<h2>Benefit of Using External JavaScript Files</h2>
+<p>Keeping scripts in different, external files has multiple advantages:</p>
+<ul>
+ <li>Separates HTML and coding</li>
+ <li>Makes HTML and JavaScript easier to read and maintain</li>
+ <li>JavaScript files kept in cache can speed up page loading</li>
+</ul>
+<p>If you want to add multiple script files to a single page, simply use multiple script tags:</p>
+<h2>Example</h2>
+<div class="code">
+<code>
+&lt;script src="script1.js"&gt;&lt;/script&gt;<br>
+&lt;script src="script2.js"&gt;&lt;/script&gt;
+</code>
+</div>
+<h2>External Script References</h2>
+<p>An external script can be linked in 3 different ways:</p>
+<ul>
+<li>With a complete URL</li>
+<li>With a file path (like /javascript/)</li>
+<li>Without a path</li>
+</ul>
