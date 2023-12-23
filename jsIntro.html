@@ -1,0 +1,56 @@
+<h1>Getting Started with JavaScript</h1>
+<p>Below are some basic capabilities of JavaScript:</p>
+
+<h2>Modifying HTML Content with JavaScript</h2>
+<p>One commonly used JavaScript method for modifying HTML content is <code>getElementById()</code>.</p>
+
+<p>To illustrate, consider an HTML element with id="demo". JavaScript can alter the content of this element as follows:</p>
+
+<h3>Example</h3>
+<code>
+ document.getElementById("demo").innerHTML = "Hello JavaScript";
+</code>
+
+<p>Note that both single and double quotes can be used in JavaScript:</p>
+
+<h3>Example</h3>
+<code>
+ document.getElementById('demo').innerHTML = 'Hello JavaScript';
+</code>
+
+<h2>Changing HTML Attribute Values in JavaScript</h2>
+<p>In the following example, JavaScript is used to change the value of the <code>src</code> attribute in an <code>&lt;img&gt;</code> tag:</p>
+
+<h3>Example</h3>
+<code>
+<button onclick="document.getElementById('myImage').src='light_on.gif'">Switch on the light</button>
+<img id="myImage" border="0" src="light_off.gif" style="width:100px">
+<button onclick="document.getElementById('myImage').src='light_off.gif'">Switch off the light</button>
+</code>
+
+<h2>JavaScript and HTML Styles (CSS)</h2>
+<p>JavaScript can also be used to change the style of HTML elements:</p>
+
+<h3>Example</h3>
+<code>
+ document.getElementById("demo").style.fontSize = "35px";
+</code>
+
+<h2>Hiding HTML Elements with JavaScript</h2>
+<p>To hide an HTML element, you can modify the <code>display</code> style:</p>
+
+<h3>Example</h3>
+<code>
+ document.getElementById("demo").style.display = "none";
+</code>
+
+<h2>Displaying Hidden HTML Elements with JavaScript</h2>
+<p>Correspondingly, JavaScript can show hidden elements by modifying the <code>display</code> style too:</p>
+
+<h3>Example</h3>
+<code>
+ document.getElementById("demo").style.display = "block";
+</code>
+
+<h3>Interesting Facts</h3>
+<p>JavaScript and Java are totally distinct languages in both concept and design. JavaScript was created by Brendan Eich in 1995 and became an ECMA standard in 1997. The official name of the standard is ECMA-262, while the language is officially named ECMAScript.</p>
